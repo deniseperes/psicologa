@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+
+    <!-- Open Graph / WhatsApp -->
+    <meta property="og:title"
+        content="Denise Siqueira Péres | Psicóloga em Ribeirão Preto – Terapia Cognitivo-Comportamental" />
+    <meta property="og:description"
+        content="Psicóloga formada pela USP, com 25 anos de experiência. Atendimento psicológico com ética, acolhimento e base científica." />
+    <meta property="og:image" content="https://denise.github.io/psicologa/FotoDenise.jpeg" />
+    <meta property="og:url" content="https://denise.github.io/psicologa/" />
+    <meta property="og:type" content="website" />
+
+    <!-- Para iPhone -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Denise Siqueira Péres – Psicóloga em Ribeirão Preto | Terapia Cognitivo-Comportamental</title>
+    <meta name="description"
+        content="Denise Siqueira Péres, psicóloga em Ribeirão Preto, oferece terapia cognitivo-comportamental para adolescentes, adultos e idosos. Atendimento online e presencial, com ética e base científica." />
+
+    <style>
+        :root {
+            --primary: #1f9e89;
+            /* Verde principal – vivo e profissional */
+            --primary-dark: #157a65;
+            /* Verde escuro – títulos e hover */
+            --secondary: #d0f0e8;
+            /* Fundo suave, porém mais presente */
+            --text: #2e2e2e;
+            /* Texto principal */
+            --light: #f5ebe0;
+            /* Bege claro substituindo o branco */
+            --caramelo: #c8895d;
+            /* Caramelo para detalhes */
+        }
+
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background: var(--secondary);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        header {
+            background: var(--light);
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+            z-index: 10;
+            border-bottom: 3px solid var(--caramelo);
+        }
+
+        header h1 {
+            font-size: 25px;
+            color: var(--primary);
+        }
+
+
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: var(--text);
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--caramelo);
+        }
+
+        .hero {
+            padding: 90px 20px;
+            background: linear-gradient(135deg, #cfe7e2, #eef6f4);
+        }
+
+        .hero h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: var(--primary-dark);
+        }
+
+        .hero p {
+            max-width: 600px;
+            margin: 0 auto 30px;
+            font-size: 18px;
+        }
+
+        .btn {
+            background: var(--caramelo);
+            color: var(--light);
+            padding: 14px 32px;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: #b37650;
+        }
+
+        section {
+            padding: 70px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        section h3 {
+            text-align: center;
+            font-size: 30px;
+            margin-bottom: 40px;
+            color: var(--primary-dark);
+            border-bottom: 3px solid var(--caramelo);
+            display: inline-block;
+            padding-bottom: 10px;
+            width: 100%;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: var(--light);
+            padding: 30px;
+            border-radius: 14px;
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+            text-align: center;
+            font-weight: bold;
+            border-top: 4px solid var(--caramelo);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .curriculo {
+            background: var(--light);
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+            border-left: 5px solid var(--caramelo);
+        }
+
+        .curriculo h4 {
+            color: var(--caramelo);
+            margin-top: 30px;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        .curriculo ul {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        .curriculo li {
+            margin-bottom: 8px;
+        }
+
+        footer {
+            background: var(--primary-dark);
+            color: var(--light);
+            text-align: center;
+            padding: 35px 20px;
+            font-size: 14px;
+        }
+
+        footer p {
+            max-width: 700px;
+            margin: auto;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+            }
+
+            nav {
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Denise Siqueira Péres - Psicóloga | CRP 06/58497-1</h1>
+        <nav>
+            <a href="#sobre">Sobre</a>
+            <a href="#curriculo">Currículo</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#atuacao">Áreas de Atuação</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <section class="hero" style="display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:40px;">
+        <img src="FotoDenise.jpeg" alt="Psicóloga Denise Peres"
+            style="width:360px;height:360px;object-fit:cover;border-radius:50%;box-shadow:0 8px 20px rgba(0,0,0,0.2);border:5px solid var(--caramelo);" />
+        <div style="max-width:500px;text-align:center;">
+            <h2>Cuidar da saúde mental é um ato de amor</h2>
+            <p>Atendimento psicológico com ética, acolhimento e uma prática baseada em evidência. Terapia online e
+                presencial.</p>
+            <a class="btn" href="https://wa.me/5516997137430" target="_blank">Agendar entrevista inicial</a>
+        </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section id="sobre">
+        <h3>Quem sou eu</h3>
+        <p style="max-width:800px;margin:auto;text-align:center;">
+            Olá, sou psicóloga com 25 anos de experiência, formada na USP, com mestrado pela Faculdade de Medicina de
+            Ribeirão Preto
+            - USP, com especializações e aprimoramentos. Fui docente (graduação e pós-graduação) e supervisora de
+            estágio em três
+            faculdades. Possuo vários artigos publicados em revistas científicas e co-autora de um capítulo de livro.
+            Minha experiência e estudo estão mais voltados para o tratamento da ansiedade, depressão, TDAH, estresse,
+            conflitos
+            conjugais ou familiares, luto, autoconfiança, autoaceitação, obesidade e emagrecimento e doenças crônicas.
+            Atualmente trabalho com a terapia cognitivo-comportamental (TCC), uma pratica baseada em evidencia e uma
+            escuta sensível
+            e empática. Atendo adolescentes, adultos e idosos. Sou apaixonada pela ajuda que a psicologia oferece aos
+            pacientes,
+            amo o que faço e estou motivada a caminhar junto com você nesta jornada. Agende uma entrevista inicial sem
+            compromisso.
+        </p>
+    </section>
+
+    <!-- CURRÍCULO -->
+    <section id="curriculo">
+        <h3>Currículo</h3>
+
+        <div class="curriculo">
+            <h4>Formação Acadêmica</h4>
+            <ul>
+                <li>USP - Graduação em Psicologia pela Faculdade de Filosofia, Ciências e Letras de Ribeirão Preto
+                    (1995-1999)</li>
+                <li>USP Aperfeiçoamento - curso de aprimoramento em psico-educação (1996 - 180 horas)</li>
+                <li>Programa de Aprimoramento Profissional Aprimoramento Multiprofissional em Hipertensão e Diabetes da
+                    Secretaria Municipal da Saúde de Ribeirão Preto - realizado em Unidades Básicas de Saúde (2001 -
+                    1886 horas)</li>
+                <li>Curso de Formação de Coordenador de Grupo Operativo pelo Instituto de Psicologia Social de Ribeirão
+                    Preto - "Enrique Pichon-Rivière" (2000- 2002 - 360 horas)</li>
+                <li>USP - Mestrado em Ciências Médicas, na área de Saúde na Comunidade, pelo Departamento de Medicina
+                    Social da Faculdade de Medicina de Ribeirão Preto (2004)</li>
+                <li>USP - Especialização - Violência doméstica contra crianças e adolescentes (2006 - 360 horas)</li>
+                <li>Formação em obesidade e emagrecimento (2024)</li>
+                <li>Formação em terapia cognitivo-comportamental (2024)</li>
+                <li>Pós- graduação em psicoterapias baseadas em evidencias: terapias cognitivo- comportamentais (em
+                    andamento)</li>
+            </ul>
+
+            <h4>Atuação Profissional</h4>
+            <ul>
+                <li>Docente e supervisora de estágio na Universidade José do Rosário Vellano (Unifenas 2005 a 2008)</li>
+                <li>Docente na Universidade Paulista (Unip - São José do Rio Pardo 2006 a 2009)</li>
+                <li>Supervisora de estágio da USP. Atendimento psicológico a pacientes portadores de diabetes? (2003 a
+                    2008)</li>
+                <li>Palestras ministradas na Escola de Enfermagem/ USP, Centro Médico de Ribeirão Preto, na Universidade
+                    Federal de São Carlos, no Centro Universitário de Araraquara, na UNESP e Unifenas.</li>
+                <li>Atendimento em consultório particular desde 2001</li>
+            </ul>
+
+            <h4>Produção Científica</h4>
+            <ul>
+                <li>PÉRES, D.S.; MAGNA, J.M.; VIANA, L.A. O portador de hipertensão arterial: atitudes, crenças,
+                    percepções, pensamentos e práticas. Revista de Saúde Pública, São Paulo, v. 5, n. 37, p. 635-642,
+                    out. 2003.</li>
+                <li>PÉRES, D.S.; FRANCO, L.J.; SANTOS, M.A. Comportamento alimentar em mulheres portadoras de diabetes
+                    tipo 2: o sentir, o pensar e o agir. Revista de Saúde Pública, São Paulo, v. 40, n. 2, 2006 (artigo
+                    destaque da revista Ciência e Tecnologia no Brasil: Pesquisa Fapesp)</li>
+                <li>ZANETTI, M.L.; OTERO, L.M.; FREITAS, M.C.F.; SANTOS, M.A.; GUIMARÃES, F.P.M.; COURI, C.E.B.; PÉRES,
+                    D.S.; FERRONATO, A.A.; SASSO, K.D.; BARBIERI, A.S. Atendimento ao paciente diabético utilizando o
+                    protocolo Staged Diabetes Management: relato de experiência. Revista Brasileira de Promoção da
+                    Saúde, v. 19, n. 4, p. 253-60, 2006.</li>
+                <li>SANTOS. M.A.; PÉRES, D.S.; ZANETTI, M.L.; OTERO, L.M. Grupo operativo como estratégia para a atenção
+                    integral ao diabético. Revista Enfermagem UERJ, v. 15, n. 2, p. 242-7, 2007.</li>
+                <li>ZANETTI, M.L.; OTERO, L.M.; BIAGGI, M.V.; SANTOS, M.A.; PÉRES, D.S.; GUIMARÃES, F.P.M. Satisfaction
+                    of diabetes patients under follow-up in a diabetes education program. Revista Latino-Americana de
+                    Enfermagem, v. 15, n. 4, p. 583-589, 2007.</li>
+                <li>ZANETTI, M.L.; OTERO, L.M.; PÉRES, D. S.; SANTOS, M.A.; GUIMARÃES, F.P.M.; FREITAS, M.C.F. Progess
+                    of the patients with diabetes mellitus who were managed with the staged diabetes management
+                    frawework. Acta Paulista de Enfermagem, v. 20, n. 3, p. 243-386, jul./set. 2007.</li>
+                <li>PÉRES, D.S.; SANTOS, M.A.; ZANETTI, M.L.; FERRONATO, A.A. Difficulties of diabetic patients in the
+                    illness control: feelings and behaviors. Revista Latino-Americana de Enfermagem, v. 15, n. 6, p.
+                    1105-1112, 2007.</li>
+                <li>PÉRES, D.S.; FRANCO, L.J.; SANTOS, M.A. Feelings of women the diagnosis of type 2 diabetes. Revista
+                    Latino-Americana de Enfermagem, v. 16, n. 1, p. 101-108, 2008.</li>
+                <li>PÉRES, D.S.; FRANCO, L.J.; SANTOS, M.A. Representações de saúde em mulheres com diabetes tipo 2.
+                    Revista Ciência, Cuidado e Saúde, v. 7, n. 3, p. 295-303, 2008.</li>
+                <li>PÉRES, D.S.; FRANCO, L.J.; SANTOS, M.A.; ZANETTI, M.L. Social representations of low-income diabetic
+                    women a according to the health-disease process. Revista Latino-Americana de Enfermagem, v. 16, n.
+                    3, p. 389-395, 2008.</li>
+                <li>ZANETTI, M.L.; BIAGG, M.V.; SANTOS, M.A.; PÉRES, D.S.; TEIXEIRA, C.R.S. O cuidado à pessoa diabética
+                    e as repercussões na família. Revista Brasileira de Enfermagem, v. 61, n. 2, p. 186-92, 2008.</li>
+                <li>SANTOS, M.A.; PÉRES, D.S.; ZANETTI, M.L.; OTERO, L.M. TEIXEIRA, C.R.S.; Programa de educação em
+                    saúde: expectativas e benefícios percebidos por usuários diabéticos. Revista Enfermagem UERJ, v. 17,
+                    n. 1, p. 57-63, 2009. </li>
+                <li>Capítulo de livro: SANTOS, M.A.; PERES, D.S.; ZANETTI, M.L.; GERBASI, L.P.; FERRONATO, A.A.; MIYAR,
+                    L.O. Grupo educativo como modalidade assistencial inserida no contexto de um programa
+                    interdisciplinar de atenção ao paciente diabético. In: SIMON, C.P.; MELO-SILVA, L.L.; SANTOS, M.A.
+                    (orgs.) </li>
+            </ul>
+
+        </div>
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section id="servicos">
+        <h3>Serviços</h3>
+        <div class="cards">
+            <div class="card">
+                <h4 style="color: var(--caramelo);">Terapia Individual</h4>
+                <p>Atendimento psicológico focado em uma prática baseada em evidência: Terapia cognitivo-comportamental
+                    (TCC).
+                </p>
+            </div>
+            <div class="card">
+                <h4 style="color: var(--caramelo);">Terapia Online</h4>
+                <p>Atendimento remoto com a mesma ética e qualidade do presencial.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ATUACAO -->
+    <section id="atuacao">
+        <h3>Áreas de Atuação</h3>
+        <div class="cards">
+            <div class="card">Ansiedade e depressão</div>
+            <div class="card">TDAH</div>
+            <div class="card">Estresse e luto</div>
+            <div class="card">Conflitos conjugais e familiares</div>
+            <div class="card">Autoestima e autoaceitação</div>
+            <div class="card">Obesidade, emagrecimento e doenças crônicas</div>
+        </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato">
+        <h3>Contato</h3>
+        <p style="text-align:center;">
+            📍 Edifício Neo - Av. Maria de Jesus Condeixa, 600 - Sala 705 - Jardim Palma Travassos - Ribeirão Preto –
+            SP<br />
+            <a href="https://wa.me/5516997137430" target="_blank" style="text-decoration:none; color: var(--text); ">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"
+                    style="width:30px; height:30px; vertical-align:middle; margin-right:8px;" />
+                (16) 99713-7430
+            </a><br />
+        </p>
+    </section>
+
+    <footer>
+        <p>
+            Este site segue o Código de Ética Profissional do Psicólogo.<br />
+            Nenhuma informação aqui substitui acompanhamento psicológico profissional.<br />
+            Copyright © 2026 Todos os direitos reservados.
+        </p>
+    </footer>
+
+</body>
+
+</html>
