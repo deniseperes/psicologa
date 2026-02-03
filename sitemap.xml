@@ -3,6 +3,8 @@
 
   <url>
     <loc>https://deniseperes.github.io/psicologa/</loc>
+    <priority>1.0</priority>                  
+    <changefreq>monthly</changefreq>          
   </url>
 
 </urlset>
